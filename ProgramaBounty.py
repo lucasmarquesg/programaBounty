@@ -25,9 +25,9 @@ def imprimir_lista():
 
 
 def relatorio(relato):
-    relatorio.df = pd.read_csv("relatorio.txt", delimiter="-")
-    relatorio.df.loc[len(relatorio.df)] = relato
-    relatorio.df.to_csv("relatorio.txt", index=False)
+    relatorio_df = pd.read_csv("relatorio.txt", delimiter="-")
+    relatorio_df.loc[len(relatorio.df)] = relato
+    relatorio_df.to_csv("relatorio.txt", index=False)
 
 
 x = input("Deseja reiniciar os Bountys e o Relatorio? S/N ").strip().upper()
